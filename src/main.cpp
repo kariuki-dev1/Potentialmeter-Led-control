@@ -30,7 +30,7 @@ void loop() {
   int led2Brightness = map(abs(sensorValue - 512), 0, 512, 255, 0); // Map the absolute difference from the center value to a brightness value for LED2
   int led3Brightness = map(sensorValue, 0, 1023, 0, 255); // Map the sensor value to a brightness value for LED3
 
-   constrain(led1Brightness, 0, 255); // Ensure the brightness values are within the valid range of 0 to 255
+   constrain(led1Brightness, 0, 255);// Ensure the brightness values are within the valid range of 0 to 255
    constrain(led2Brightness, 0, 255);
    constrain(led3Brightness, 0, 255);
 
